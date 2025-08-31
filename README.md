@@ -1,4 +1,4 @@
-# safe - run a command isolated to the current directory
+# safer - run a command isolated to the current directory
 
 Many dev tools are explicitly running arbitrary code directly from the internet with unknown chain of custody.
 Most devs know we should probably have a separate user for to run these dev tools as, or use devcontainers or VMs but
@@ -11,15 +11,15 @@ Something like:
 
 ```bash
 $ cd foo-project
-$ safe pip install foo
-$ safe cargo run
-$ safe npm install foo
+$ safer pip install foo
+$ safer cargo run
+$ safer npm install foo
 
 # etc
 ```
 
 Ideally this should work on linux, bsd, macos and maybe even windows.
-For convenience the "safe" command should have read/execute access to the directories on the real users's $PATH
+For convenience the "safer" command should have read/execute access to the directories on the real users's $PATH
 but only have read/write to the directory tree under the current working directory.
 
 ## What could the guard rails be?
