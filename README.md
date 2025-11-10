@@ -2,6 +2,8 @@
 
 # Nevermind, here's a much better idea: https://justine.lol/pledge/
 
+see also: https://github.com/containers/bubblewrap
+
 Many dev tools are explicitly running arbitrary code directly from the internet with unknown chain of custody.
 Most devs know we should probably have a separate user for to run these dev tools as, or use devcontainers or VMs but
 often the convenience isn't good enough to actually do so.
